@@ -38,4 +38,10 @@ public class Calculator
 		return a+b+c;
 	}
 
+	@GetMapping("calculator/add/{a}/{b}/{c}/{d}")
+	int add(@PathVariable int a,@PathVariable int b,@PathVariable int c,@PathVariable int d)
+	{
+		return a+b+c+d;
+	}
+
 }
