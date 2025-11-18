@@ -39,7 +39,9 @@ public class Calculator
 	}
 
 
-	@GetMapping("calculator/add/{a}/{b}/{c}/{d}")
+
+
+@GetMapping("calculator/add/{a}/{b}/{c}/{d}")
 	int add(@PathVariable int a,@PathVariable int b,@PathVariable int c,@PathVariable int d)
 	{
 		return a+b+c+d;
